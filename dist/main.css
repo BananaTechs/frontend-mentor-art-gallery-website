@@ -5,12 +5,14 @@
   --font-size-header-s: 2rem;
   --font-size-body-m: 1.125rem;
   --font-size-body-s: 1rem;
+  --font-size-button-s: 1.25rem;
   --line-height-header-xl: 4.0625rem;
   --line-height-header-l: 3.125rem;
   --line-height-header-m: 2.8125rem;
   --line-height-header-s: 2rem;
   --line-height-body-m: 1.75rem;
   --line-height-body-s: 1.625rem;
+  --line-height-button-s: auto;
 }
 @media screen and (min-width: 1050px) {
   :root {
@@ -75,10 +77,39 @@ h1 {
   line-height: var(--line-height-header-xl);
 }
 
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 900;
+  font-size: var(--font-size-header-l);
+  line-height: var(--line-height-header-l);
+}
+
+h3 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 900;
+  font-size: var(--font-size-header-m);
+  line-height: var(--line-height-header-m);
+}
+
+h4 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 900;
+  font-size: var(--font-size-header-s);
+  line-height: var(--line-height-header-s);
+}
+
 p {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: var(--font-size-body-m);
   line-height: var(--line-height-body-m);
   color: #444444;
+}
+
+button {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-size: var(--font-size-button-s);
+  line-height: var(--line-height-button-s);
+  letter-spacing: 0.2275rem;
 }/*# sourceMappingURL=main.css.map */

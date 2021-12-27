@@ -7,6 +7,7 @@
     --font-size-header-s: 2rem;
     --font-size-body-m: 1.125rem;
     --font-size-body-s: 1rem;
+    --font-size-button-s: 1.25rem;
 
     --line-height-header-xl: 4.0625rem;
     --line-height-header-l: 3.125rem;
@@ -14,6 +15,7 @@
     --line-height-header-s: 2rem;
     --line-height-body-m: 1.75rem;
     --line-height-body-s: 1.625rem;
+    --line-height-button-s: auto;
 
     @include mq-desktop {
         --font-size-header-xl: 6rem;
