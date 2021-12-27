@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+h1, h2, h3, h4, h5, h6 {
+    color: map-get($map: $colors, $key: "main");
+}
+
+h1 {
+    @include font("header", "xl");
+}
+
+p {
+    @include font("body", "m");
+    color: map-get($map: $colors, $key: "secondary")
+}
