@@ -2,6 +2,7 @@
 
 h1, h2, h3, h4, h5, h6 {
     color: map-get($map: $colors, $key: "main");
+    text-transform: uppercase;
 }
 
 h1 {
@@ -25,7 +26,8 @@ p {
     color: map-get($map: $colors, $key: "secondary")
 }
 
-button {
+.button {
     @include font("button", "s");
     letter-spacing: 0.2275rem;
+    text-transform: uppercase;
 }
