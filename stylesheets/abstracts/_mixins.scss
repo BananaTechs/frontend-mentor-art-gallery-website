@@ -11,6 +11,18 @@
     line-height: var(--line-height-#{$type}-#{$size});
 }
 
+@mixin container {
+    max-width: map-get($container-sizes, sm);
+
+    @include mq-tablet {
+        max-width: map-get($container-sizes, md);
+    }
+
+    @include mq-desktop {
+        max-width: map-get($container-sizes, lg);
+    }
+}
+
 @mixin mq-tablet {
     @media screen and (min-width: map-get($breakpoints, sm)) {
         @content;
