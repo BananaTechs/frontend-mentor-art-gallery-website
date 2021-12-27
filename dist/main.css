@@ -31,6 +31,20 @@
   }
 }
 
+.container {
+  max-width: 400px;
+}
+@media screen and (min-width: 450px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
 @media screen and (min-width: 450px) {
   .mobile {
     display: none;
