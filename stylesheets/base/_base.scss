@@ -34,6 +34,10 @@
     }
 }
 
+body {
+    text-align: left;
+}
+
 .container {
     max-width: map-get($container-sizes, sm);
 
