@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 :root {
-    --font-size-header-xl: 4.375rem;
+    --font-size-header-xl: 3.75rem;
     --font-size-header-l: 3.4375rem;
     --font-size-header-m: 3.125rem;
     --font-size-header-s: 2rem;
@@ -16,6 +16,10 @@
     --line-height-body-m: 1.75rem;
     --line-height-body-s: 1.625rem;
     --line-height-button-s: auto;
+
+    @include mq-tablet {
+        --font-size-header-xl: 4.375rem;
+    }
 
     @include mq-desktop {
         --font-size-header-xl: 6rem;
@@ -38,8 +42,14 @@ body {
     text-align: left;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .container {
     max-width: map-get($container-sizes, sm);
+    padding: 1rem;
 
     @include mq-tablet {
         max-width: map-get($container-sizes, md);
