@@ -162,6 +162,44 @@ p {
   text-transform: uppercase;
 }
 
+.button {
+  width: 16.25rem;
+  height: 4.5rem;
+  padding-right: 3.5rem;
+  position: relative;
+  background-color: #151515;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button::after {
+  content: url("../../assets/icon-arrow-right.svg");
+  width: 3.5rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 12.75rem;
+  background-color: #D5966C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button:hover {
+  background-color: #D5966C;
+}
+.button:hover::after {
+  background-color: #151515;
+}
+
+.button-backward {
+  padding-right: initial;
+  padding-left: 3.5rem;
+}
+.button-backward::after {
+  content: url("../../assets/icon-arrow-left.svg");
+  left: 0;
+}
+
 footer {
   padding: 2.5rem 2rem;
   background-color: #151515;
