@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+footer {
+    padding: 2.5rem 2rem;
+    background-color: map-get($colors, "main");
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    h5, p {
+        color: map-get($colors, "base");
+    }
+}
