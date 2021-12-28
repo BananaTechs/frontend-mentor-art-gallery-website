@@ -16,7 +16,7 @@ $pseudo-element-width: 3.5rem;
     align-items: center;
 
     &::after {
-        content: url("../../assets/icon-arrow-right.svg");
+        content: url("../assets/icon-arrow-right.svg");
         width: $pseudo-element-width;
         height: $button-height;
         position: absolute;
@@ -41,7 +41,7 @@ $pseudo-element-width: 3.5rem;
     padding-left: $pseudo-element-width;
 
     &::after {
-        content: url("../../assets/icon-arrow-left.svg");
+        content: url("../assets/icon-arrow-left.svg");
         left: 0;
     }
 }

@@ -174,7 +174,7 @@ p {
   align-items: center;
 }
 .button::after {
-  content: url("../../assets/icon-arrow-right.svg");
+  content: url("../assets/icon-arrow-right.svg");
   width: 3.5rem;
   height: 4.5rem;
   position: absolute;
@@ -196,7 +196,7 @@ p {
   padding-left: 3.5rem;
 }
 .button-backward::after {
-  content: url("../../assets/icon-arrow-left.svg");
+  content: url("../assets/icon-arrow-left.svg");
   left: 0;
 }
 
