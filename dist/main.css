@@ -47,6 +47,7 @@ img {
 
 .container {
   max-width: 400px;
+  margin: 0 auto;
   padding: 1rem;
 }
 @media screen and (min-width: 450px) {
@@ -143,4 +144,27 @@ p {
   line-height: var(--line-height-button-s);
   letter-spacing: 0.2275rem;
   text-transform: uppercase;
+}
+
+.section-info {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.section-info .card p {
+  margin-top: 1.5rem;
+}
+
+.section-info .card-base-color {
+  padding: 1rem 0;
+}
+
+.section-info .card-main-color {
+  padding: 3rem 1.5rem;
+  background-color: #151515;
+}
+.section-info .card-main-color h3, .section-info .card-main-color p {
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+
+.section-info {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.section-info .card {
+    p {
+        margin-top: 1.5rem;
+    }
+}
+
+.section-info .card-base-color {
+    padding: 1rem 0;
+}
+
+.section-info .card-main-color {
+    padding: 3rem 1.5rem;
+    background-color: map-get($colors, "main");
+    
+    h3, p {
+        color: map-get($map: $colors, $key: "base");
+    }
+}

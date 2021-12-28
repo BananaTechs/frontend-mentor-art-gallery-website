@@ -49,6 +49,7 @@ img {
 
 .container {
     max-width: map-get($container-sizes, sm);
+    margin: 0 auto;
     padding: 1rem;
 
     @include mq-tablet {
