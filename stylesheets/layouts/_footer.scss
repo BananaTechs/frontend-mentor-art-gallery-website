@@ -1,8 +1,12 @@
 @use "../abstracts" as *;
 
+
 footer {
-    padding: 2.5rem 2rem;
     background-color: map-get($colors, "main");
+}
+
+footer .container{
+    padding: 2.5rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;

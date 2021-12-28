@@ -201,13 +201,16 @@ p {
 }
 
 footer {
-  padding: 2.5rem 2rem;
   background-color: #151515;
+}
+
+footer .container {
+  padding: 2.5rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
 }
-footer h5, footer p {
+footer .container h5, footer .container p {
   color: #FFFFFF;
 }
 
