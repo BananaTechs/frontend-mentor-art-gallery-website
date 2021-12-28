@@ -7,7 +7,7 @@
   --font-size-body-m: 1.125rem;
   --font-size-body-s: 1rem;
   --font-size-button-s: 1.25rem;
-  --line-height-header-xl: 4.0625rem;
+  --line-height-header-xl: 3.4375rem;
   --line-height-header-l: 3.125rem;
   --line-height-header-m: 2.8125rem;
   --line-height-header-s: 2rem;
@@ -19,6 +19,7 @@
 @media screen and (min-width: 37.5em) {
   :root {
     --font-size-header-xl: 4.375rem;
+    --line-height-header-xl: 4.0625rem;
   }
 }
 @media screen and (min-width: 65em) {
@@ -47,6 +48,10 @@ body {
 img {
   width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -166,6 +171,18 @@ footer {
 }
 footer h5, footer p {
   color: #FFFFFF;
+}
+
+footer .socials {
+  display: flex;
+  gap: 1.25rem;
+}
+footer .socials a {
+  font-size: 1.25rem;
+  color: #FFFFFF;
+}
+footer .socials a:hover {
+  color: #D5966C;
 }
 
 .section-hero .container {

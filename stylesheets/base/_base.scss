@@ -10,7 +10,7 @@
     --font-size-body-s: 1rem;
     --font-size-button-s: 1.25rem;
 
-    --line-height-header-xl: 4.0625rem;
+    --line-height-header-xl: 3.4375rem;
     --line-height-header-l: 3.125rem;
     --line-height-header-m: 2.8125rem;
     --line-height-header-s: 2rem;
@@ -21,6 +21,7 @@
 
     @include mq-tablet {
         --font-size-header-xl: 4.375rem;
+        --line-height-header-xl: 4.0625rem;
     }
 
     @include mq-desktop {
@@ -49,6 +50,10 @@ body {
 img {
     width: 100%;
     height: auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
