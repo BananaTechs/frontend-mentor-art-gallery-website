@@ -60,17 +60,17 @@ a {
 .container {
     max-width: map-get($container-sizes, sm);
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 map-get($container-paddings, sm);
     position: relative;
 
     @include mq-tablet {
         max-width: map-get($container-sizes, md);
-        padding: 0 2.5rem;
+        padding: 0 map-get($container-paddings, md);
     }
 
     @include mq-desktop {
         max-width: map-get($container-sizes, lg);
-        padding: 0 10.25rem;
+        padding: 0 map-get($container-paddings, lg);
     }
 }
 
