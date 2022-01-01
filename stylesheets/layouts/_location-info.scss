@@ -8,10 +8,18 @@
     }
 }
 
-#location-info .button {
+#location-info .button-div {
     position: absolute;
     top: 0;
-    left: 0;
+    width: 100%;
+}
+
+#location-info .button {
+    transform: translateX(#{map-get($container-paddings, sm) * -1});
+
+    @include mq-tablet {
+        transform: none;
+    }
 }
 
 #location-info img {

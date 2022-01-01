@@ -376,10 +376,19 @@ p {
   color: #FFFFFF;
 }
 
-#location-info .button {
+#location-info .button-div {
   position: absolute;
   top: 0;
-  left: 0;
+  width: 100%;
+}
+
+#location-info .button {
+  transform: translateX(-1rem);
+}
+@media screen and (min-width: 43em) {
+  #location-info .button {
+    transform: none;
+  }
 }
 
 #location-info img {
