@@ -35,7 +35,7 @@
 
         --line-height-header-xl: 5.5rem;
         --line-height-header-l: 4.375rem;
-        --line-height-header-m: 3.125rem;
+        --line-height-header-m: 3.75rem;
         --line-height-header-s: 2.25rem;
         --line-height-header-xs: 2rem;
         --line-height-body-m: 2rem;
@@ -61,10 +61,11 @@ a {
     max-width: map-get($container-sizes, sm);
     margin: 0 auto;
     padding: 0 1rem;
+    position: relative;
 
     @include mq-tablet {
         max-width: map-get($container-sizes, md);
-        padding: 0 2rem;
+        padding: 0 2.5rem;
     }
 
     @include mq-desktop {
