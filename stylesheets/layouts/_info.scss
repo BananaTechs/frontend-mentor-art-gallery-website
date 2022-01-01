@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 
-.section-info {
+#info {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
     display: grid;
@@ -42,17 +42,27 @@
     }
 }
 
-.section-info .card {
-    p {
-        margin-top: 1.5rem;
+#info .card {
+    display: flex;
+    align-items: center;
+}
+
+#info .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include mq-desktop {
+        gap: 2rem;
     }
 }
 
-.section-info .card-base-color {
+#info .card-base-color {
     padding: 1rem 0;
+    padding-right: 3.5rem;
 }
 
-.section-info .card-main-color {
+#info .card-main-color {
     padding: 3rem 1.5rem;
     background-color: map-get($colors, "main");
     

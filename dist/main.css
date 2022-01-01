@@ -270,7 +270,7 @@ footer .socials a:hover {
   }
 }
 
-.section-info {
+#info {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
   display: grid;
@@ -278,42 +278,55 @@ footer .socials a:hover {
   grid: "pic1" "card1" "pic2" "pic3" "card2";
 }
 @media screen and (min-width: 43em) {
-  .section-info {
+  #info {
     grid: "card1 pic1 pic1" "pic2 pic2 pic3" "pic2 pic2 card2";
     grid-template-columns: 1fr 0.4fr 1fr;
   }
 }
-.section-info .card-1 {
+#info .card-1 {
   grid-area: card1;
 }
-.section-info .card-2 {
+#info .card-2 {
   grid-area: card2;
 }
-.section-info .pic-1 {
+#info .pic-1 {
   grid-area: pic1;
 }
-.section-info > .pic-2 {
+#info > .pic-2 {
   grid-area: pic2;
 }
-.section-info .pic-3 {
+#info .pic-3 {
   grid-area: pic3;
 }
-.section-info img {
+#info img {
   height: 100%;
 }
 
-.section-info .card p {
-  margin-top: 1.5rem;
+#info .card {
+  display: flex;
+  align-items: center;
 }
 
-.section-info .card-base-color {
+#info .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 65em) {
+  #info .card-content {
+    gap: 2rem;
+  }
+}
+
+#info .card-base-color {
   padding: 1rem 0;
+  padding-right: 3.5rem;
 }
 
-.section-info .card-main-color {
+#info .card-main-color {
   padding: 3rem 1.5rem;
   background-color: #151515;
 }
-.section-info .card-main-color h3, .section-info .card-main-color p {
+#info .card-main-color h3, #info .card-main-color p {
   color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
