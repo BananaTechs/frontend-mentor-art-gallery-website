@@ -52,22 +52,18 @@
     flex-direction: column;
     gap: 1.5rem;
 
+    @include mq-tablet {
+        max-wdith: 14rem;
+    }
+
     @include mq-desktop {
+        max-width: 21.875rem;
         gap: 2rem;
     }
 }
 
 #info .card-base-color {
     padding: 1rem 0;
-    
-
-    @include mq-tablet {
-        padding-right: 3.5rem;
-    }
-
-    @include mq-desktop {
-        padding-right: 7.75rem;
-    }
 }
 
 #info .card-main-color {
@@ -76,5 +72,9 @@
     
     h3, p {
         color: map-get($map: $colors, $key: "base");
+    }
+
+    @include mq-desktop {
+        padding: 4rem 3rem;
     }
 }

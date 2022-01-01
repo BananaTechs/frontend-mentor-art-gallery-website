@@ -343,24 +343,20 @@ footer .socials a:hover {
   flex-direction: column;
   gap: 1.5rem;
 }
+@media screen and (min-width: 43em) {
+  #info .card-content {
+    max-wdith: 14rem;
+  }
+}
 @media screen and (min-width: 65em) {
   #info .card-content {
+    max-width: 21.875rem;
     gap: 2rem;
   }
 }
 
 #info .card-base-color {
   padding: 1rem 0;
-}
-@media screen and (min-width: 43em) {
-  #info .card-base-color {
-    padding-right: 3.5rem;
-  }
-}
-@media screen and (min-width: 65em) {
-  #info .card-base-color {
-    padding-right: 7.75rem;
-  }
 }
 
 #info .card-main-color {
@@ -369,4 +365,9 @@ footer .socials a:hover {
 }
 #info .card-main-color h3, #info .card-main-color p {
   color: #FFFFFF;
+}
+@media screen and (min-width: 65em) {
+  #info .card-main-color {
+    padding: 4rem 3rem;
+  }
 }/*# sourceMappingURL=main.css.map */
