@@ -217,8 +217,26 @@ footer .container {
 footer .container h5, footer .container p {
   color: #FFFFFF;
 }
+footer .container p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: var(--font-size-body-s);
+  line-height: var(--line-height-body-s);
+}
+@media screen and (min-width: 43em) {
+  footer .container {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  footer .container p {
+    max-width: 17.5rem;
+  }
+}
 
 footer .socials {
+  flex-grow: 1;
   display: flex;
   gap: 1.25rem;
 }
@@ -228,6 +246,11 @@ footer .socials a {
 }
 footer .socials a:hover {
   color: #D5966C;
+}
+@media screen and (min-width: 43em) {
+  footer .socials {
+    justify-content: flex-end;
+  }
 }
 
 #hero {

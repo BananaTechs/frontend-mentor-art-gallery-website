@@ -14,9 +14,26 @@ footer .container{
     h5, p {
         color: map-get($colors, "base");
     }
+
+    p {
+        @include font("body", "s");
+    }
+
+    @include mq-tablet {
+        $padding-y: 3.5rem;
+        padding-top: $padding-y;
+        padding-bottom: $padding-y;
+        flex-direction: row;
+        gap: 4rem;
+
+        p {
+            max-width: 17.5rem;
+        }
+    }
 }
 
 footer .socials {
+    flex-grow: 1;
     display: flex;
     gap: 1.25rem;
     
@@ -27,5 +44,9 @@ footer .socials {
         &:hover {
             color: map-get($colors, "accent");
         }
+    }
+
+    @include mq-tablet {
+        justify-content: flex-end;
     }
 }
