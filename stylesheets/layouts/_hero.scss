@@ -1,9 +1,40 @@
 @use "../abstracts" as *;
 
-.section-hero .container {
+#hero {
+    position: relative;
+}
+
+#hero .hero-content {
+    @include mq-tablet {
+        position: absolute;
+        inset: 0;
+    }
+}
+
+#hero .container {
+    @include mq-tablet {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+#hero .hero-text {
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
+
+    @include mq-tablet {
+        padding-left: 50%;
+        gap: 3rem;
+    }
+}
+
+#hero img {
+    @include mq-tablet {
+        width: 57%;
+        height: auto;
+    }
 }
