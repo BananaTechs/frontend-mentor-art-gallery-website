@@ -59,7 +59,15 @@
 
 #info .card-base-color {
     padding: 1rem 0;
-    padding-right: 3.5rem;
+    
+
+    @include mq-tablet {
+        padding-right: 3.5rem;
+    }
+
+    @include mq-desktop {
+        padding-right: 7.75rem;
+    }
 }
 
 #info .card-main-color {

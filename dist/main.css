@@ -351,7 +351,16 @@ footer .socials a:hover {
 
 #info .card-base-color {
   padding: 1rem 0;
-  padding-right: 3.5rem;
+}
+@media screen and (min-width: 43em) {
+  #info .card-base-color {
+    padding-right: 3.5rem;
+  }
+}
+@media screen and (min-width: 65em) {
+  #info .card-base-color {
+    padding-right: 7.75rem;
+  }
 }
 
 #info .card-main-color {
